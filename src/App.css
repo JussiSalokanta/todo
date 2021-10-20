@@ -16,13 +16,14 @@ ul {
   background-color: #333;
 }
 
-.nav-item,
-.last-nav-item {
+.nav-item
+{
   display: inline-block;
-
+  
 }
 
-.nav-item a {
+.nav-item a
+{
   display: block;
   color: white;
   text-align: center;
@@ -31,7 +32,12 @@ ul {
   border-right: 1px;
 }
 
-
-.nav-item a:hover {
+.nav-item a:hover
+ {
   background-color: #111;
+}
+
+.nav-item:last-child {
+  float:right;
+ 
 }

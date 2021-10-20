@@ -13,10 +13,10 @@ class App extends React.Component {
                 <Link to="/">Home page</Link>
               </li>
               <li className="nav-item">
-                <Link to="/joke">Jokes</Link>
+                <Link to="/completed">Completed</Link>
               </li>
               <li className="nav-item">
-                <Link to="/pictures">Pictures</Link>
+                <Link to="/info">Info</Link>
               </li>
             </ul>
           </nav>
@@ -24,12 +24,11 @@ class App extends React.Component {
             <Route path="/" exact>
               <div> <h1>Home page</h1> This is the home page</div>
             </Route>
-            <Route path="/joke">
-              <div> <h1>Joke</h1> How many programmers does it take to change a light bulb?
-                None – It’s a hardware problem</div>
+            <Route path="/completed">
+              <div> <h1>Completed</h1> Items you have completed are shown here</div>
             </Route>
-            <Route path="/pictures">
-              <div> <h1>Pictures</h1>
+            <Route path="/info">
+              <div> <h1>Info</h1>
               </div>
             </Route>
           </Switch>
