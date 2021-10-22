@@ -23,6 +23,7 @@ const Modal = props => {
                     Make sure that the possible license conditions actually allow such use and you fulfil all
                     the related requirements. (The application code must, naturally, be written by you.)
                     If you add content later on, do not forget updating the information related to this tier!
+                    joo joo
                 </div>
                 <div className="modal-footer">
                     <button onClick={props.onClose} className="button">Close</button>
