@@ -1,5 +1,4 @@
 import './App.css';
-import AddInfo from './pages/Additems';
 import Modal from './pages/modal';
 import Completed from './pages/completed'
 import Home from './pages/home'

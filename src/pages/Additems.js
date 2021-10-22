@@ -1,7 +1,5 @@
 import { useState } from "react";
 
-
-
 function AddInfo(props) {
 
 const [name, setName] = useState("");
