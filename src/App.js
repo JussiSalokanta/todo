@@ -1,5 +1,6 @@
 import './App.css';
-import Modal from './modal/modal';
+import AddInfo from './pages/Additems';
+import Modal from './pages/modal';
 import Completed from './pages/completed'
 import Home from './pages/home'
 import React from 'react';
@@ -8,7 +9,11 @@ import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 
 function App() {
   const [show, setShow] = useState(false)
+ 
+
+
   return (
+    
           <BrowserRouter>
         <div className="App">
           <nav className="nav-bar">
@@ -30,7 +35,8 @@ function App() {
             <Route path="/completed" component={Completed}/>
           </Switch>
         </div>
-        
+      
+      
       </BrowserRouter>
       
     );

@@ -14,8 +14,7 @@ const Modal = props => {
                     Author: Jussi Salokanta
                     <br />
                     <br />
-                    •Short using instructions. If your UI is extremely intuitive,and instructions are
-                    unnecessary, this state of matters must be mentioned here, then.
+                    This To-Do app uses json-file as mock database.
                     <br />
                     <br />
                     •If all the (possible) pictures and other such content used in your application are originally
