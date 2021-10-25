@@ -1,10 +1,21 @@
 import React from 'react';
-import AddInfo from './Additems';
-import { useState } from 'react'
+import Additems from './Additems';
+import { useState, useEffect } from 'react'
+import ItemDisplay from './itemDisplay';
 
 function Home() {
 
   const [data, setData] = useState({ todo: [] })
+
+  useEffect(() => {
+    fetch("http://localhost:3010/todo")
+      .then((response) => response.json())
+      .then((data) => setData({ todo: data }));
+
+  }, []);
+
+
+
   const addInfoToData = (item) => {
     let todo = data["todo"];
 
@@ -25,10 +36,12 @@ function Home() {
   }
   return (
     <div>
-      <h1>Home page</h1>
-      <p>This is the home page</p>
-      <AddInfo addInfo={addInfoToData} />
+      <p>Start adding items to the To-Do list</p>
+      <Additems addItems={addInfoToData} />
+      <br />
+      <ItemDisplay todo={data["todo"]} />
     </div>
+
   );
 };
 

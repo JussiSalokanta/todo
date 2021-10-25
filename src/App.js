@@ -7,10 +7,9 @@ import {useState} from 'react';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 
 function App() {
+
   const [show, setShow] = useState(false)
  
-
-
   return (
     
           <BrowserRouter>

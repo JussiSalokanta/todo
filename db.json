@@ -1,21 +1,21 @@
 {
   "todo": [
     {
-      "name": "test",
-      "tag": "test2",
-      "dateAndTime": "Fri Oct 22 2021 11:14:31 GMT+0300 (Eastern European Summer Time)",
+      "name": "maitoa",
+      "tag": "juoma",
+      "dateAndTime": "2021-10-25",
       "id": 1
     },
     {
-      "name": "test3",
-      "tag": "test33",
-      "dateAndTime": "Fri Oct 22 2021 11:14:39 GMT+0300 (Eastern European Summer Time)",
+      "name": "Mehua",
+      "tag": "Juoma",
+      "dateAndTime": "2021-10-25",
       "id": 2
     },
     {
-      "name": "maitoa",
-      "tag": "",
-      "dateAndTime": "Fri Oct 22 2021 11:14:39 GMT+0300 (Eastern European Summer Time)",
+      "name": "Kaljaa",
+      "tag": "Juoma",
+      "dateAndTime": "2021-10-25",
       "id": 3
     }
   ]

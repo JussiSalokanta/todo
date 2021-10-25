@@ -1,5 +1,5 @@
 import React from 'react';
-  
+ 
 function Completed(props) {
 
     const showToDo =(todo) => {
@@ -14,7 +14,7 @@ function Completed(props) {
     };
     return <div className="container">
         <div className="row">
-            <h2>ToDos</h2>
+            <h2>Completed To-Do's</h2>
         </div>
         <div className="row">
             <table className="table">

@@ -1,25 +1,37 @@
 import { useState } from "react";
 
-function AddInfo(props) {
+function getCurrentDate(separator='-'){
+
+    let newDate = new Date()
+    let date = newDate.getDate();
+    let month = newDate.getMonth() + 1;
+    let year = newDate.getFullYear();
+    
+    return `${year}${separator}${month<10?`0${month}`:`${month}`}${separator}${date}`
+    }
+
+function Additems(props) {
 
 const [name, setName] = useState("");
 const [tag, setTag] = useState("");
-const [dateAndTime] = useState(Date())
+const [dateAndTime] = useState(getCurrentDate())
 
 const addItemButton = () => {
 
-props.addInfo( {
+props.addItems( {
     name: name,
     tag: tag,
     dateAndTime: dateAndTime
 
 });
+
 setName("");
 setTag("");
+
 };
 return (
     <div>
-        <h2> Add To-Do</h2>
+        <br/>
         <form>
             <label htmlFor="name-field">Name</label>
             <input id="name-field"
@@ -42,4 +54,4 @@ return (
 
 }
 
-export default AddInfo
+export default Additems
