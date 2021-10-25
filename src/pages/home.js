@@ -14,8 +14,6 @@ function Home() {
 
   }, []);
 
-
-
   const addInfoToData = (item) => {
     let todo = data["todo"];
 

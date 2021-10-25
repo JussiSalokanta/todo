@@ -21,7 +21,8 @@ const addItemButton = () => {
 props.addItems( {
     name: name,
     tag: tag,
-    dateAndTime: dateAndTime
+    dateAndTime: dateAndTime,
+    completed: false
 
 });
 
@@ -37,12 +38,14 @@ return (
             <input id="name-field"
             type="text"
             value={name}
+            placeholder="Add a new task"
             onChange ={(e) => setName(e.target.value)}
             />
                 <label htmlFor="tag-field">Tag</label>
             <input id="tag-field"
             type="text"
             value={tag}
+            placeholder="Add tag to group tasks"
             onChange ={(e) => setTag(e.target.value)}
             />    
             <button type="button" onClick ={addItemButton}>Add</button>       

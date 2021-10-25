@@ -1,22 +1,32 @@
 {
   "todo": [
     {
-      "name": "maitoa",
-      "tag": "juoma",
+      "name": "Lenkille",
+      "tag": "ulos",
       "dateAndTime": "2021-10-25",
+      "completed": false,
       "id": 1
     },
     {
-      "name": "Mehua",
-      "tag": "Juoma",
+      "name": "Uimaan",
+      "tag": "ulos",
       "dateAndTime": "2021-10-25",
+      "completed": false,
       "id": 2
     },
     {
-      "name": "Kaljaa",
-      "tag": "Juoma",
+      "name": "syömään",
+      "tag": "ulos",
       "dateAndTime": "2021-10-25",
+      "completed": false,
       "id": 3
+    },
+    {
+      "name": "Elokuviin",
+      "tag": "heti",
+      "dateAndTime": "2021-10-25",
+      "completed": false,
+      "id": 4
     }
   ]
 }
