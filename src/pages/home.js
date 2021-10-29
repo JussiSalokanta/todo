@@ -14,6 +14,22 @@ function Home() {
 
   }, []);
 
+const deleteItem = (item) => {
+  let todo = data["todo"];
+  const requestOptions = {
+    method: "DELETE"
+  };
+  fetch(`http://localhost:3010/todo/${todo.id}`, requestOptions).then(
+    (reponse) => {
+      if(reponse.ok) {
+        const index = item.indexOf(todo);
+        item.splice(index, 1)
+        setData({ todo: todo })
+      }
+    }
+  );
+};
+
   const addInfoToData = (item) => {
     let todo = data["todo"];
 
@@ -34,12 +50,13 @@ function Home() {
   }
   return (
     <div>
+    <div>
       <p>Start adding items to the To-Do list</p>
-      <Additems addItems={addInfoToData} />
+      <Additems deleteItem={deleteItem} addItems={addInfoToData} />
       <br />
       <ItemDisplay todo={data["todo"]} />
     </div>
-
+</div>
   );
 };
 

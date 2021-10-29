@@ -1,5 +1,6 @@
 body {
   background-color: #FCF8E8;
+ 
 }
 
 .App {
@@ -51,6 +52,8 @@ ul {
   border-right: 1px;
 }
 
+/* PopUp window start */
+
 .modal {
   top: 0;
   left: 0;
@@ -83,6 +86,10 @@ background-color: #F7F7E8;
 padding: 10px;
 border-top: 1px solid rgb(0, 0, 0);
 border-bottom: 1px solid rgb(0, 0, 0);
+
+/* PopUp window end */
+
+
 
 }
 .nav-item:last-child .infobutton {
@@ -145,6 +152,8 @@ html body div#root div.App div div form button:hover {
   font-size: 24px;
 }
 
+
+/* Remove and done buttons from to-do lists */
 html body div#root div.App div div.container div.tasks div button.complete-btn {
   background-color: #9DAD7F;
   border: none;
@@ -178,3 +187,55 @@ html body div#root div.App div div.container div.tasks div button.remove-btn:hov
   
 }
 
+html body div#root div.App div div.container div.tasks div {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0.5em;
+  margin: 0.5em;
+  width: auto;
+  text-align: left;
+}
+
+
+/* After clicking done*/
+html body div#root div.App div div.container div.tasks2 div {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0.5em;
+  margin: 0.5em;
+  width: auto;
+  text-align: left;
+  text-decoration: line-through;
+}
+html body div#root div.App div div.container div.tasks2 div button.complete-btn {
+  background-color: #9DAD7F;
+  border: none;
+  font-weight: bold;
+  float: right;
+  padding: 5px 9px;
+  text-align: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 5px;
+  color: black;
+}
+html body div#root div.App div div.container div.tasks2 div button.remove-btn {
+  background-color: #FF7878;
+  border: none;
+  font-weight: bold;
+  float: right;
+  padding: 5px 9px;
+  text-align: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+html body div#root div.App div div.container div.tasks2 div button.complete-btn:hover {
+  background-color: #7C9473;
+  
+}
+html body div#root div.App div div.container div.tasks2 div button.remove-btn:hover {
+  background-color: #D35D6E;
+  
+}
