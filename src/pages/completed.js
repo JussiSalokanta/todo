@@ -1,9 +1,5 @@
 function showCompleted() {
-
-
-    return (
-        <div> Completed items from To-Do</div>
-    )
+  return <div> Completed items from To-Do</div>;
 }
 
-export default showCompleted
+export default showCompleted;
