@@ -14,6 +14,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### 'npx json-server -H localhost -p 3010 -w db.json'
+### `npx json-server -H localhost -p 3010 -w db.json`
 
 Starts mock-databe on port 3010.
