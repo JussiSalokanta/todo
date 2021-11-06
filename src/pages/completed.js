@@ -1,5 +1,5 @@
 function showCompleted() {
-  return <div> Completed items from To-Do</div>;
+  return <div> This is still under construction</div>;
 }
 
 export default showCompleted;

@@ -1,32 +1,60 @@
 {
   "todo": [
     {
-      "name": "Lenkille",
-      "tag": "ulos",
-      "dateAndTime": "2021-10-25",
+      "name": "Go hiking",
+      "tag": "Monday",
+      "date": "2021-11-6",
       "completed": false,
       "id": 1
     },
     {
-      "name": "Uimaan",
-      "tag": "ulos",
-      "dateAndTime": "2021-10-25",
+      "name": "Do homework",
+      "tag": "Now",
+      "date": "2021-11-6",
       "completed": false,
       "id": 2
     },
     {
-      "name": "Syömään",
-      "tag": "ulos",
-      "dateAndTime": "2021-10-25",
+      "name": "Wash car",
+      "tag": "Friday",
+      "date": "2021-11-6",
       "completed": false,
       "id": 3
     },
     {
-      "name": "Pyöräilemään",
-      "tag": "ulos",
-      "dateAndTime": "2021-10-29",
+      "name": "Cut the grass",
+      "tag": "Friday",
+      "date": "2021-11-6",
       "completed": false,
       "id": 4
+    },
+    {
+      "name": "Relax",
+      "tag": "Saturday",
+      "date": "2021-11-6",
+      "completed": false,
+      "id": 5
+    },
+    {
+      "name": "Relax",
+      "tag": "Saturday",
+      "date": "2021-11-6",
+      "completed": false,
+      "id": 6
+    },
+    {
+      "name": "Do homework",
+      "tag": "Now",
+      "date": "2021-11-6",
+      "completed": false,
+      "id": 7
+    },
+    {
+      "name": "dO HomeWork",
+      "tag": "now",
+      "date": "2021-11-6",
+      "completed": false,
+      "id": 8
     }
   ]
 }

@@ -2,6 +2,7 @@ import React from "react";
 import Additems from "./Additems";
 import { useState, useEffect } from "react";
 import ItemDisplay from "./itemDisplay";
+import Search from "./search";
 
 function Home() {
   const [data, setData] = useState({ todo: [] });
@@ -27,6 +28,28 @@ function Home() {
       }
     );
   };
+  const [filter, setFilter] = useState({});
+  const updateFilter = (searchParameter) => {
+    setFilter(searchParameter);
+  };
+
+  const filterData = (data) => {
+    const filterData = [];
+
+    if (!filter.name) {
+      return data;
+    }
+    for (const item of data) {
+      if (filter.name !== "" && item.name !== filter.name) {
+        continue;
+      }
+      if (filter.tag !== "" && item.tag !== filter.tag) {
+        continue;
+      }
+      filterData.push(item);
+    }
+    return filterData;
+  };
 
   const addInfoToData = (item) => {
     let todo = data["todo"];
@@ -51,8 +74,11 @@ function Home() {
       <div>
         <p>Start adding items to the To-Do list</p>
         <Additems addItems={addInfoToData} />
+        <p> Search by name and/or tag </p>
+        <Search callback={updateFilter} />
         <br />
-        <ItemDisplay todo={data["todo"]} deleteItem={deleteItem} />
+        <ItemDisplay todo={filterData(data["todo"])} deleteItem={deleteItem} />
+        <br />
       </div>
     </div>
   );
