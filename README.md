@@ -17,3 +17,4 @@ You will also see any lint errors in the console.
 ### `npx json-server -H localhost -p 3010 -w db.json`
 
 Starts mock-databe on port 3010.
+This is needed to display the to-do-items from db.json file.
