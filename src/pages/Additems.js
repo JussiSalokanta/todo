@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+//Get current date and modify it to YYYY-MM-DD
 function getCurrentDate(separator = "-") {
   let newDate = new Date();
   let date = newDate.getDate();
@@ -24,6 +25,7 @@ function Additems(props) {
       completed: false,
     });
 
+    // clears inputfield after submitting
     setName("");
     setTag("");
   };

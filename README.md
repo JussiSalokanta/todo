@@ -1,8 +1,8 @@
-## About
+## General info
+* To-Do-App
+* Made as final project in Full stack courses Front End part.
 
-
-
-## Available Scripts
+## Usage
 
 In the project directory, you can run:
 
@@ -18,3 +18,13 @@ You will also see any lint errors in the console.
 
 Starts mock-databe on port 3010.
 This is needed to display the to-do-items from db.json file.
+
+
+## To-do:
+* Button to mark item as completed but not delete from list
+* UI needs improvment
+
+
+## Technologies
+* react
+

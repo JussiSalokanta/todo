@@ -16,15 +16,14 @@ const Modal = (props) => {
           <br />
           This To-Do app uses json-file as mock database.
           <br />
+          One can add items to the list by writing something <br />
+          in the name and tag input-fields. Filtering (search)
           <br />
-          •If all the (possible) pictures and other such content used in your
-          application are originally created by you yourself, tell it here
-          explicitly. Otherwise, mention the licenses/permissions under which
-          you use such additional content from external sources. Make sure that
-          the possible license conditions actually allow such use and you fulfil
-          all the related requirements. (The application code must, naturally,
-          be written by you.) If you add content later on, do not forget
-          updating the information related to this tier! joo joo
+          works the same way but it is still not complete <br />
+          as it works only with exact wordings as it checks the input <br />
+          and compares it to the items in the database. <br />
+          <br />
+          <br />
         </div>
         <div className="modal-footer">
           <button onClick={props.onClose} className="button">

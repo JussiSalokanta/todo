@@ -13,6 +13,7 @@ function Home() {
       .then((data) => setData({ todo: data }));
   }, []);
 
+  // Delete item from the list
   const deleteItem = (todoToDelete) => {
     const requestOptions = {
       method: "DELETE",
@@ -28,6 +29,8 @@ function Home() {
       }
     );
   };
+
+  // Conditions of the filter (search) function
   const [filter, setFilter] = useState({});
   const updateFilter = (searchParameter) => {
     setFilter(searchParameter);
@@ -51,6 +54,7 @@ function Home() {
     return filterData;
   };
 
+  // To add items on the to-do-list
   const addInfoToData = (item) => {
     let todo = data["todo"];
 
