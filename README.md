@@ -8,15 +8,12 @@ In the project directory, you can run:
 
 ### `npm install`
 
-This command installs a package and any packages that this project depends on.
+To install all the packages that this project depends on.
 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
 ### `npx json-server -H localhost -p 3010 -w db.json`
 
